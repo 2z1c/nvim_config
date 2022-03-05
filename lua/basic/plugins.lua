@@ -97,7 +97,7 @@ packer.startup(
             }
 
             -- LSP 相关的 插件
-            -- LSP 基础服务 
+            -- LSP 基础服务
             use {
                 "neovim/nvim-lspconfig",
                 config = function()
@@ -111,8 +111,7 @@ packer.startup(
                 config = function()
                     require("conf.nvim-lsp-installer")
                 end
-            }                                          
-                                                    
+            }
             -- LSP UI 美化
             use {
                 "tami5/lspsaga.nvim",
