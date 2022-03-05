@@ -3,7 +3,7 @@
 
 [my_nvim_config](https://codeup.teambition.com/5fc4b8e3a3dbf859c88e39bf/study/nvim_config)
 
-# 使用插件 管理器
+## 使用插件 管理器
 ```bash
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
@@ -16,7 +16,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 
-# LSP 
+## LSP 
 LSP相关配置都会被保存到
 ```bash
 ~/.local/share/nvim/lsp_servers/  目录下
@@ -27,4 +27,10 @@ LSP相关配置都会被保存到
 1. 添加 lsp 的文件 zeta_note.lua
 2. 在  lua/conf/nvim-lsp-installer.lua 中放开限制， 
 3. 最后 使用LspInstall 安装 markdown 的服务器
+```
+
+## Vim 常用调试方法
+
+```bash
+:set Verbose=9
 ```
