@@ -25,3 +25,8 @@ vim --startuptime filename
 :map 
 
 ```
+
+## 查看按键值
+```bash
+showkey -a
+```
