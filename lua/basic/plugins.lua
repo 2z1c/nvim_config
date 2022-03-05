@@ -82,6 +82,20 @@ packer.startup(
                     require("conf.nvim-spectre")
                 end
             }
+
+            -- 文件匹配
+            use {
+                "nvim-telescope/telescope.nvim",
+                requires = {
+                    "nvim-lua/plenary.nvim", -- Lua 开发模块
+                    "BurntSushi/ripgrep", -- 文字查找
+                    "sharkdp/fd" -- 文件查找
+                },
+                config = function()
+                    require("conf.telescope")
+                end
+            }
+            
         end,
         -- 使用浮动窗口
         config = {
