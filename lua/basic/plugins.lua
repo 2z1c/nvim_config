@@ -63,6 +63,13 @@ packer.startup(
                 end
             }
 
+            -- 快速跳转
+            use {
+                "phaazon/hop.nvim",
+                config = function()
+                    require("conf.hop")
+                end
+            }
         end,
         -- 使用浮动窗口
         config = {
