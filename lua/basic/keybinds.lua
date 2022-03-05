@@ -42,3 +42,4 @@ vim.keybinds.gmap("n", "<C-n>", "8j", vim.keybinds.opts)
 
 -- -- 通过 leader cs 切换拼写检查
 -- vim.keybinds.gmap("n", "<leader>cs", "<cmd>set spell!<CR>", vim.keybinds.opts)
+
