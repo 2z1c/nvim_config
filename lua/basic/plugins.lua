@@ -152,9 +152,6 @@ packer.startup(
             -- 代码注释
             use {
                 "numToStr/Comment.nvim",
-                requires = {
-                    "JoosepAlviste/nvim-ts-context-commentstring"
-                },
                 config = function()
                     require("conf.Comment")
                 end
