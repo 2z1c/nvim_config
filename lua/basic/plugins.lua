@@ -95,8 +95,32 @@ packer.startup(
                     require("conf.telescope")
                 end
             }
-            
-        end,
+
+            -- LSP 相关的 插件
+            -- LSP 基础服务 
+            use {
+                "neovim/nvim-lspconfig",
+                config = function()
+                    require("conf.nvim-lspconfig")
+                end
+            }
+
+            -- 自动安装 LSP
+            use {
+                "williamboman/nvim-lsp-installer",
+                config = function()
+                    require("conf.nvim-lsp-installer")
+                end
+            }                                          
+                                                    
+            -- LSP UI 美化
+            use {
+                "tami5/lspsaga.nvim",
+                config = function()
+                    require("conf.lspsaga")
+                end
+            }
+            end,
         -- 使用浮动窗口
         config = {
             display = {
