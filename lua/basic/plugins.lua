@@ -13,6 +13,29 @@ packer.startup(
             use {
                 "yianwillis/vimcdoc",
             }
+
+            use {
+                "kyazdani42/nvim-tree.lua",
+                requires = {
+                    -- 依赖一个图标插件
+                    "kyazdani42/nvim-web-devicons"
+                },
+                config = function()
+                    -- 插件加载完成后自动运行 lua/conf/nvim-tree.lua 文件中的代码
+                    require("conf.nvim-tree")
+                end
+            }
+
+            use {
+                "catppuccin/nvim",
+                -- 改个别名，因为它的名字是 nvim，可能会冲突
+                as = "catppuccin",
+                config = function()
+                    -- 插件加载完成后自动运行 lua/conf/catppuccin.lua 文件中的代码
+                    require("conf.catppuccin")
+                end
+            }
+
         end,
         -- 使用浮动窗口
         config = {
