@@ -16,4 +16,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 ```
 
 
-
+# LSP 
+LSP相关配置都会被保存到
+```bash
+~/.local/share/nvim/lsp_servers/  目录下
+```
