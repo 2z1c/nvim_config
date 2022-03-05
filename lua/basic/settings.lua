@@ -32,8 +32,8 @@
  vim.o.list = true
  -- 是否开启自动缩进
  vim.o.autoindent = true
- -- 设定自动缩进的策略为 plugin
- vim.o.filetype = "plugin"
+--  设定自动缩进的策略为 plugin
+--  vim.o.filetype = "plugin"
  -- 是否开启高亮搜索
  vim.o.hlsearch = true
  -- 是否在插入括号时短暂跳转到另一半括号上
