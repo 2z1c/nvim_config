@@ -15,3 +15,7 @@ vim.keybinds.gmap("n", "hg", "<cmd>HopLine<CR>", vim.keybinds.opts)
 
 -- 搜索并跳转到字符
 vim.keybinds.gmap("n", "hc", "<cmd>HopChar1<CR>", vim.keybinds.opts)
+
+-- 搜索跳转, 只能适应当前buffer
+vim.keybinds.gmap("n", "hp", "<cmd>HopPattern<CR>", vim.keybinds.opts)
+

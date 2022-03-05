@@ -49,3 +49,13 @@ vim.keybinds.gmap("n", "<C-l>", "<cmd>BufferLineCycleNext<CR>", vim.keybinds.opt
 vim.keybinds.gmap("n", "<leader>bh", "<cmd>BufferLineCloseLeft<CR>", vim.keybinds.opts)
 -- 关闭右侧缓冲区
 vim.keybinds.gmap("n", "<leader>bl", "<cmd>BufferLineCloseRight<CR>", vim.keybinds.opts)
+
+
+-- 添加 leader + num 打开tab的快捷键
+
+for i = 1, 10, 1 do
+	local _key = string.format("<leader>%s", i)
+	local _cmd = string.format("<cmd>BufferLineGoToBuffer %s<CR>", i)
+	vim.keybinds.gmap("n", _key, _cmd, vim.keybinds.opts)
+end
+
