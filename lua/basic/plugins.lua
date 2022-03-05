@@ -156,6 +156,14 @@ packer.startup(
                     require("conf.Comment")
                 end
             }
+
+	    -- git状态栏
+	    use {
+		"lewis6991/gitsigns.nvim",
+		config = function ()
+		    require("conf.gitsigns")
+		end
+	    }
         end,
         -- 使用浮动窗口
         config = {
