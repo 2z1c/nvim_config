@@ -21,3 +21,10 @@ LSP相关配置都会被保存到
 ```bash
 ~/.local/share/nvim/lsp_servers/  目录下
 ```
+## markdown 
+
+```bash
+1. 添加 lsp 的文件 zeta_note.lua
+2. 在  lua/conf/nvim-lsp-installer.lua 中放开限制， 
+3. 最后 使用LspInstall 安装 markdown 的服务器
+```
