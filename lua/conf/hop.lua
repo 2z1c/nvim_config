@@ -1,4 +1,4 @@
--- https://github.com/phaazon/hop.nvim​
+-- https://github.com/phaazon/hop.nvim
 require("hop").setup()
 
 -- 搜索并跳转到单词

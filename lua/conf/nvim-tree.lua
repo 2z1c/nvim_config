@@ -1,4 +1,4 @@
--- https://github.com/kyazdani42/nvim-tree.lua
+-- https://github.com/kyazdani42/nlua/conf/nvim-lsp-installer.luavhttps://github.com/kyazdani42/nvim-tree.luaim-tree.lua
 
 require("nvim-tree").setup(
     {
