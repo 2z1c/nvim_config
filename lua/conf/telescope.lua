@@ -9,7 +9,7 @@ require("telescope").setup()
 vim.keybinds.gmap("n", "<C-p>", "<cmd>Telescope find_files theme=dropdown<CR>", vim.keybinds.opts)
 
 -- 查找文字
-vim.keybinds.gmap("n", "<leader>fg", "<cmd>Telescope live_grep theme=dropdown<CR>", vim.keybinds.opts)
+vim.keybinds.gmap("n", "<C-f>", "<cmd>Telescope live_grep theme=dropdown<CR>", vim.keybinds.opts)
 -- 查找特殊符号
 vim.keybinds.gmap("n", "<leader>fb", "<cmd>Telescope buffers theme=dropdown<CR>", vim.keybinds.opts)
 -- 查找帮助文档
