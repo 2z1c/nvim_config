@@ -14,3 +14,6 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 所有插件相关的配置都会被同步到  目录下去
 ~/.local/share/nvim/site/pack/ 
 ```
+
+
+
