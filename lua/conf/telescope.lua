@@ -5,7 +5,7 @@
 
 require("telescope").setup()
 -- 查找文件
--- vim.keybinds.gmap("n", "<leader>ff", "<cmd>Telescope find_files theme=dropdown<CR>", vim.keybinds.opts)
+vim.keybinds.gmap("n", "<leader>ff", "<cmd>Telescope find_files theme=dropdown<CR>", vim.keybinds.opts)
 vim.keybinds.gmap("n", "<C-p>", "<cmd>Telescope find_files theme=dropdown<CR>", vim.keybinds.opts)
 
 -- 查找文字
