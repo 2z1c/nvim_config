@@ -70,6 +70,18 @@ packer.startup(
                     require("conf.hop")
                 end
             }
+
+            -- 全局替换
+            use {
+                "nvim-pack/nvim-spectre",
+                requires = {
+                    "nvim-lua/plenary.nvim", -- Lua 开发模块
+                    "BurntSushi/ripgrep" -- 文字查找
+                },
+                config = function()
+                    require("conf.nvim-spectre")
+                end
+            }
         end,
         -- 使用浮动窗口
         config = {
