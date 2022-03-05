@@ -11,7 +11,7 @@ vim.keybinds.gmap("n", "<C-p>", "<cmd>Telescope find_files theme=dropdown<CR>", 
 -- 查找文字
 vim.keybinds.gmap("n", "<C-f>", "<cmd>Telescope live_grep theme=dropdown<CR>", vim.keybinds.opts)
 -- 查找特殊符号
-vim.keybinds.gmap("n", "<leader>fb", "<cmd>Telescope buffers theme=dropdown<CR>", vim.keybinds.opts)
+vim.keybinds.gmap("n", "<C-o>", "<cmd>Telescope buffers theme=dropdown<CR>", vim.keybinds.opts)
 -- 查找帮助文档
 vim.keybinds.gmap("n", "<leader>fh", "<cmd>Telescope help_tags theme=dropdown<CR>", vim.keybinds.opts)
 -- 查找最近打开的文件
