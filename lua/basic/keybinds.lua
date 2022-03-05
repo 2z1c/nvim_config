@@ -20,9 +20,10 @@ vim.keybinds.gmap("i", "jj", "<Esc>", vim.keybinds.opts)
 -- vim.keybinds.gmap("n", "L", "$", vim.keybinds.opts)
 -- vim.keybinds.gmap("v", "L", "$", vim.keybinds.opts)
 
--- -- 将 C-u 和 C-d 调整为上下滑动 8行
+-- -- 将 C-u 和 C-n 调整为上下滑动 8行
 vim.keybinds.gmap("n", "<C-u>", "8k", vim.keybinds.opts)
-vim.keybinds.gmap("n", "<C-d>", "8j", vim.keybinds.opts)
+-- vim.keybinds.gmap("n", "<C-d>", "8j", vim.keybinds.opts)
+vim.keybinds.gmap("n", "<C-n>", "8j", vim.keybinds.opts)
 
 -- -- 插入模式下的上下左右移动
 -- vim.keybinds.gmap("i", "<A-k>", "<up>", vim.keybinds.opts)
