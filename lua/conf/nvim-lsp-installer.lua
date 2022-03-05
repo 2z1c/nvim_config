@@ -39,21 +39,21 @@ local function attach(_, bufnr)
     -- 跳转到下一个问题（代替内置 LSP 的窗口，Lspsaga 让跳转问题更美观）
     vim.keybinds.bmap(bufnr, "n", "g]", "<cmd>Lspsaga diagnostic_jump_next<CR>", vim.keybinds.opts)
     -- 悬浮窗口上翻页，由 Lspsaga 提供
-    vim.keybinds.bmap(
-        bufnr,
-        "n",
-        "<C-p>",
-        "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>",
-        vim.keybinds.opts
-    )
-    -- 悬浮窗口下翻页，由 Lspsaga 提供
-    vim.keybinds.bmap(
-        bufnr,
-        "n",
-        "<C-n>",
-        "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>",
-        vim.keybinds.opts
-    )
+    -- vim.keybinds.bmap(
+    --     bufnr,
+    --     "n",
+    --     "<C-p>",
+    --     "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<CR>",
+    --     vim.keybinds.opts
+    -- )
+    -- -- 悬浮窗口下翻页，由 Lspsaga 提供
+    -- vim.keybinds.bmap(
+    --     bufnr,
+    --     "n",
+    --     "<C-n>",
+    --     "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<CR>",
+    --     vim.keybinds.opts
+    -- )
 end
 
 -- 自动安装或启动 LanguageServers
