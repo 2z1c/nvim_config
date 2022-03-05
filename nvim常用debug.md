@@ -18,3 +18,10 @@
 vim --startuptime filename 
 
 ```
+
+## 快捷键
+```bash
+# 查看所有的快捷键
+:map 
+
+```
