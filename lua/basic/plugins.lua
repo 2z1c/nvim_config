@@ -167,6 +167,13 @@ packer.startup(
 		    require("conf.gitsigns")
 		end
 	    }
+
+	    use {
+		"anuvyklack/pretty-fold.nvim",
+   		config = function()
+     			require('conf.pretty-fold')
+		end
+	    }
         end,
         -- 使用浮动窗口
         config = {
