@@ -157,23 +157,23 @@ packer.startup(
                 end
             }
 
-	    -- git状态栏
-	    use {
-		"lewis6991/gitsigns.nvim",
-		requires = {
-			"nvim-lua/plenary.nvim"
-		},
-		config = function ()
-		    require("conf.gitsigns")
-		end
-	    }
+            -- git状态栏
+            use {
+                "lewis6991/gitsigns.nvim",
+                requires = {
+                    "nvim-lua/plenary.nvim"
+                },
+                config = function ()
+                    require("conf.gitsigns")
+                end
+            }
 
-	    use {
-		"anuvyklack/pretty-fold.nvim",
-   		config = function()
-     			require('conf.pretty-fold')
-		end
-	    }
+            use {
+                "anuvyklack/pretty-fold.nvim",
+                config = function()
+                        require('conf.pretty-fold')
+                end
+            }
         end,
         -- 使用浮动窗口
         config = {
