@@ -21,12 +21,27 @@ LSP相关配置都会被保存到
 ```bash
 ~/.local/share/nvim/lsp_servers/  目录下
 ```
-## markdown 
+### markdown 
 
 ```bash
 1. 添加 lsp 的文件 zeta_note.lua
 2. 在  lua/conf/nvim-lsp-installer.lua 中放开限制， 
 3. 最后 使用LspInstall 安装 markdown 的服务器
+```
+### clangd
+https://github.com/clangd/clangd/releases/download/13.0.0/clangd-linux-13.0.0.zip
+```bash
+# 首先手动下载文件， 原有的连接路劲下载太慢
+# wget url /home/zcz/.local/share/nvim/lsp_servers/clangd.tmp/archive.zip
+
+手动直接修改 
+/home/zcz/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer/lua/nvim-lsp-installer/servers/clangd/init.lua
+的下载路径， unzip_remote 
+
+使用下面的命令安装即可
+:LspInstall 
+
+然后在 lsp 文件夹下面， 添加一个 clangd.lua 文件 处理配置即可
 ```
 
 ## Vim 常用调试方法
