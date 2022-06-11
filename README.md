@@ -21,7 +21,7 @@ LSP相关配置都会被保存到
 ```bash
 ~/.local/share/nvim/lsp_servers/  目录下
 ```
-### markdown 
+### markdown
 
 ```bash
 1. 添加 lsp 的文件 zeta_note.lua
@@ -36,7 +36,7 @@ https://github.com/clangd/clangd/releases/download/13.0.0/clangd-linux-13.0.0.zi
 
 手动直接修改 
 /home/zcz/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer/lua/nvim-lsp-installer/servers/clangd/init.lua
-的下载路径， unzip_remote 
+的下载路径， unzip_remote
 
 使用下面的命令安装即可
 :LspInstall 
