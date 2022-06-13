@@ -6,7 +6,7 @@ require("Comment").setup(
             -- 切换行注释
             line = "gcc",
             --- 切换块注释
-            block = "gCC"
+            block = "gcc"
         },
         opleader = {
             -- 可视模式下的行注释
